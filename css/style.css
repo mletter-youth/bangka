@@ -4,6 +4,13 @@
     font-weight: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
 
 *{
     margin: 0;
@@ -25,6 +32,45 @@ main.swiper{
     max-height: 80vh;
     height: 100vh;
     overflow: hidden;
+}
+main.swiper>[class*=slide-]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    gap: 5px;
+    opacity: 0;
+    transition: 0.5s;
+}
+main.swiper>[class*=slide-] p{
+    font-family: 'Pretendard';
+    font-size: 14px;
+    color: #fff;
+}
+main.swiper>[class*=slide-].active{
+    opacity: 1;
+}
+.slide-start-img{
+    position: relative;
+    width: 100%;
+    max-width: 12vw;
+    padding-top: 65%;
+}
+.slide-start-img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
 }
 section.swiper-slide{
     max-width: 70vw;
