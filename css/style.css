@@ -125,7 +125,7 @@ section.swiper-slide{
 }
 
 /* DETAIL PAGE 크기 조정 */
-.detail-page.two .page-img{
+/* .detail-page.two .page-img{
     padding: 70% 0;
 }
 .detail-page.three .page-img{
@@ -146,7 +146,7 @@ section.swiper-slide{
 }
 .detail-page.eight .page-img{
     padding: 78% 0;
-}
+} */
 
 /* SWIPER 버튼 간격 조정 */
 .swiper-button-next{
@@ -176,7 +176,7 @@ section.swiper-slide{
     font-family: 'YeogiOttaeJalnanGothic';
     text-align: center;
     bottom: 0;
-    margin-bottom: 5%;
+    margin-bottom: 38%;
 }
 
 @media (max-width:1800px){
